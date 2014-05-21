@@ -1,5 +1,5 @@
-20 五月 2014 23:26:17,916 INFO  ~ Starting F:\github\yabe
-20 五月 2014 23:26:18,494 WARN  ~ You're running Play! in DEV mode
-20 五月 2014 23:26:18,603 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
-20 五月 2014 23:26:23,464 INFO  ~ Connected to jdbc:h2:mem:play;MODE=MYSQL;LOCK_MODE=0
-20 五月 2014 23:26:23,487 INFO  ~ Application 'yabe' is now started !
+21 五月 2014 23:06:12,275 INFO  ~ Starting F:\github\yabe
+21 五月 2014 23:06:12,901 WARN  ~ You're running Play! in DEV mode
+21 五月 2014 23:06:12,995 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+21 五月 2014 23:06:16,728 INFO  ~ Connected to jdbc:h2:mem:play;MODE=MYSQL;LOCK_MODE=0
+21 五月 2014 23:06:17,512 INFO  ~ Application 'yabe' is now started !
