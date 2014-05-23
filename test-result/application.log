@@ -1,6 +1,5 @@
-23 五月 2014 00:09:10,345 INFO  ~ Starting F:\github\yabe
-23 五月 2014 00:09:10,350 INFO  ~ Module crud is available (E:\develop\play-1.2.4\play-1.2.4\modules\crud)
-23 五月 2014 00:09:10,987 WARN  ~ You're running Play! in DEV mode
-23 五月 2014 00:09:11,088 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
-23 五月 2014 00:09:18,293 INFO  ~ Connected to jdbc:h2:mem:play;MODE=MYSQL;LOCK_MODE=0
-23 五月 2014 00:09:19,000 INFO  ~ Application 'yabe' is now started !
+24 五月 2014 00:43:00,351 INFO  ~ Starting F:\github\yabe
+24 五月 2014 00:43:00,355 INFO  ~ Module crud is available (E:\develop\play-1.2.4\play-1.2.4\modules\crud)
+24 五月 2014 00:43:00,356 INFO  ~ Module secure is available (E:\develop\play-1.2.4\play-1.2.4\modules\secure)
+24 五月 2014 00:43:00,964 WARN  ~ You're running Play! in DEV mode
+24 五月 2014 00:43:01,061 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
