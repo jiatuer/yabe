@@ -4,6 +4,8 @@ import play.*;
 import play.mvc.*;
  
 import java.util.*;
+
+import com.sun.org.apache.xml.internal.resolver.helpers.Debug;
  
 import models.*;
  
@@ -19,7 +21,48 @@ public class Admin extends Controller {
     }
  
     public static void index() {
+        String user = Security.connected();
+        List<Post> posts = Post.find("author.email", user).fetch();
+        render(posts);
+    }
+ 
+    public static void form(Long id) {
+        if(id != null) {
+            Post post = Post.findById(id);
+            render(post);
+        }
         render();
+    }
+     
+    public static void save(Long id, String title, String content, String tags) {
+        Post post;
+        if(id == null) {
+            // Create post
+            User author = User.find("byEmail", Security.connected()).first();
+            post = new Post(author, title, content);
+        } else {
+            // Retrieve post
+            post = Post.findById(id);
+            // Edit
+            post.title = title;
+            post.content = content;
+            post.tags.clear();
+        }
+        // Set tags list
+        for(String tag : tags.split("\\s+")) {
+            if(tag.trim().length() > 0) {
+                post.tags.add(Tag.findOrCreateByName(tag));
+            }
+        }
+        // Validate
+        validation.valid(post);
+        if(validation.hasErrors()) {
+        	System.out.println(validation.errors().toString());
+            render("@form", post);
+        }
+        // Save
+        post.save();
+        index();
     }
     
 }

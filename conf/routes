@@ -30,4 +30,15 @@ GET     /posts/{tag}                    Application.listTagged
 
 # Administration
 GET     /admin/?                                Admin.index
+
 *       /admin                                  module:crud
+
+GET     /admin/myPosts/{id}                 Admin.form
+GET     /admin/new                          Admin.form
+
+POST    /admin/myPosts/{id}                 Admin.save
+POST    /admin/new                          Admin.save
+
+
+POST    /admin/myPosts/{id}                 Admin.save
+POST    /admin/new                          Admin.save

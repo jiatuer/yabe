@@ -19,7 +19,7 @@ public class Post extends Model {
     
     @Lob
     @Required
-    @MaxSize(10000)
+//    @MaxSize(100000)
     public String content;
     
     @Required
